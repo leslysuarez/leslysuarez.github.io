@@ -155,3 +155,8 @@ body {
   font-size: 0.9em;
   margin-top: 0.2em;
 }
+
+/* ---------- Barra lateral: permitir que textos largos bajen de línea ---------- */
+.author__urls li {
+  white-space: normal;
+}
