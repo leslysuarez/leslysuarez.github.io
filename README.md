@@ -1,2 +1,9 @@
 # leslysuarez.github.io
-My web page by Lesly Suarez.
+
+Sitio académico de **Lesly Camila Suarez Diaz** — M.Sc. in Mathematics (Universidad de Santiago de Chile).
+
+🌐 **https://leslysuarez.github.io**
+
+📘 **¿Cómo editar el sitio?** Lee la [GUIA.md](GUIA.md): agregar charlas, cursos, eventos, PDFs, secciones nuevas, y cambiar colores, fuente y menú — todo desde github.com, sin instalar nada.
+
+Hecho con la plantilla [Academic Pages](https://github.com/academicpages/academicpages.github.io) (Jekyll, licencia MIT).

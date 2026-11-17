@@ -1,0 +1,32 @@
+---
+layout: archive
+title: "Talks"
+permalink: /talks/
+author_profile: true
+---
+
+{% comment %}
+  Esta página se arma SOLA a partir de los archivos de la carpeta _talks.
+  Para agregar una charla NO edites este archivo: crea un archivo nuevo en _talks
+  (ver GUIA.md, sección "Agregar una charla").
+{% endcomment %}
+
+{% assign charlas = site.talks | sort: "date" | reverse %}
+{% assign por_anio = charlas | group_by_exp: "c", "c.date | date: '%Y'" %}
+
+{% for anio in por_anio %}
+  <h2>{{ anio.name }}</h2>
+  <ul class="lista-items">
+    {% for c in anio.items %}
+      <li>
+        {% if c.type and c.type != "Talk" %}<span class="etiqueta">{{ c.type }}</span> {% endif %}<strong>{{ c.title }}</strong>.
+        {{ c.venue }}{% if c.location %}, {{ c.location }}{% endif %}, {{ c.date | date: "%B %Y" }}.
+        {% if c.slides %}<a href="{{ c.slides | relative_url }}">[slides]</a>{% endif %}
+        {% if c.link %}<a href="{{ c.link }}">[link]</a>{% endif %}
+        {% if c.content and c.content != "" %}<div class="item-descripcion">{{ c.content | markdownify }}</div>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<h3>Contact me at <a href="mailto:lesly.suarez@usach.cl">lesly.suarez@usach.cl</a></h3>

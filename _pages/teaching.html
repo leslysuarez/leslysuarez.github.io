@@ -1,0 +1,34 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+{% comment %}
+  Esta página se arma SOLA a partir de los archivos de la carpeta _teaching.
+  Para agregar un curso o seminario NO edites este archivo: crea un archivo nuevo
+  en _teaching (ver GUIA.md, sección "Agregar un curso o seminario").
+{% endcomment %}
+
+{% assign cursos = site.teaching | sort: "date" | reverse %}
+{% assign por_anio = cursos | group_by_exp: "c", "c.date | date: '%Y'" %}
+
+{% for anio in por_anio %}
+  <h2>{{ anio.name }}</h2>
+  <ul class="lista-items">
+    {% for c in anio.items %}
+      <li>
+        {% if c.type %}<span class="etiqueta">{{ c.type }}</span> {% endif %}{% if c.link %}<a href="{{ c.link }}"><strong>{{ c.title }}</strong></a>{% else %}<strong>{{ c.title }}</strong>{% endif %}.
+        {% if c.role %}{{ c.role }}.{% endif %}
+        {% if c.venue %}{{ c.venue }}{% if c.location %}, {% endif %}{% endif %}{% if c.location %}({{ c.location }}){% endif %}
+        {% if c.content and c.content != "" %}<div class="item-descripcion">{{ c.content | markdownify }}</div>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+<h2>My Notes</h2>
+<p><a class="btn--lesly" href="{{ '/teaching/my-notes/' | relative_url }}">My Notes</a></p>
+
+<h3>Contact me at <a href="mailto:lesly.suarez@usach.cl">lesly.suarez@usach.cl</a></h3>

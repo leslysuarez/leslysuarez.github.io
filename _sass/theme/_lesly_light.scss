@@ -1,0 +1,69 @@
+/* ==========================================================================
+   TEMA "LESLY" - VERSIÓN CLARA
+   --------------------------------------------------------------------------
+   Este es el archivo para CAMBIAR LOS COLORES del sitio (modo claro).
+   Cambia solo los valores de la sección "COLORES PRINCIPALES".
+   Los colores se escriben en formato hexadecimal: #RRGGBB
+   (puedes elegirlos en https://htmlcolorcodes.com/es/ )
+   ========================================================================== */
+
+/* ---------- COLORES PRINCIPALES (edita aquí) ---------- */
+$lesly-acento               : #A68AB5;   // lavanda: botones, subrayado del menú, detalles
+$lesly-enlace               : #7B5A8F;   // color de los enlaces (más oscuro que el acento para que se lea bien)
+$lesly-barra                : #000000;   // fondo de la barra superior (menú)
+$lesly-barra-texto          : #FFFFFF;   // texto de la barra superior
+$lesly-fondo                : #EDEDED;   // fondo gris de la página
+$lesly-tarjeta              : #FFFFFF;   // fondo de los bloques de contenido
+$lesly-texto                : #212121;   // color del texto
+/* ------------------------------------------------------ */
+
+/* Color codes used for the theme */
+$primary-color              : $lesly-acento;
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 90%);
+
+/* Color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : $lesly-acento;
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+:root {
+    --global-base-color                 : #{$lesly-acento};
+    --global-bg-color                   : #{$lesly-tarjeta};
+    --global-footer-bg-color            : #{$lesly-fondo};
+    --global-border-color               : #{$lighter-gray};
+    --global-dark-border-color          : #bdc1c4;
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$dark-gray};
+    --global-link-color                 : #{$lesly-enlace};
+    --global-link-color-hover           : #{mix(#000, $lesly-enlace, 25%)};
+    --global-link-color-visited         : #{$lesly-enlace};
+    --global-masthead-link-color        : #{$lesly-barra-texto};
+    --global-masthead-link-color-hover  : #{$lesly-acento};
+    --global-text-color                 : #{$lesly-texto};
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{$lighter-gray};
+
+    /* Variables propias del sitio (usadas en _sass/_personalizado.scss) */
+    --lesly-acento                      : #{$lesly-acento};
+    --lesly-barra                       : #{$lesly-barra};
+    --lesly-barra-texto                 : #{$lesly-barra-texto};
+    --lesly-fondo                       : #{$lesly-fondo};
+    --lesly-tarjeta                     : #{$lesly-tarjeta};
+}

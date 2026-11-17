@@ -1,0 +1,29 @@
+# ==========================================================================
+# MENÚ SUPERIOR DEL SITIO
+# --------------------------------------------------------------------------
+# Cada bloque "- title / url" es un botón del menú, en este orden.
+# - Para AGREGAR un botón: copia un bloque completo y cambia title y url.
+# - Para QUITAR un botón: borra su bloque (la página sigue existiendo).
+# - Para cambiar el ORDEN: mueve los bloques.
+# Un url que empieza con / es una página del sitio; uno con https:// es externo.
+# ¡Respeta los espacios al inicio de cada línea!
+# ==========================================================================
+
+main:
+  - title: "Overview"
+    url: /overview/
+
+  - title: "Research"
+    url: /research/
+
+  - title: "Events"
+    url: /events/
+
+  - title: "Talks"
+    url: /talks/
+
+  - title: "Teaching"
+    url: /teaching/
+
+  - title: "CV"
+    url: https://drive.google.com/file/d/13_nQ27HLmIgtohHiVep_icvd2oj0JsoA/view?usp=sharing

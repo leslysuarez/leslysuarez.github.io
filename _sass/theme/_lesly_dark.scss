@@ -1,0 +1,41 @@
+/* ==========================================================================
+   TEMA "LESLY" - VERSIÓN OSCURA
+   --------------------------------------------------------------------------
+   Colores que se usan cuando la visita activa el modo oscuro
+   (botón del sol/luna en la barra superior).
+   ========================================================================== */
+
+/* ---------- COLORES DEL MODO OSCURO (edita aquí) ---------- */
+$lesly-oscuro-acento        : #C3A9D2;   // lavanda claro
+$lesly-oscuro-enlace        : #CDB6DA;
+$lesly-oscuro-barra         : #000000;
+$lesly-oscuro-barra-texto   : #FFFFFF;
+$lesly-oscuro-fondo         : #1E1E1E;
+$lesly-oscuro-tarjeta       : #2B2B2B;
+$lesly-oscuro-texto         : #F1F1F1;
+/* ---------------------------------------------------------- */
+
+html[data-theme="dark"] {
+    --global-base-color                 : #{$lesly-oscuro-acento};
+    --global-bg-color                   : #{$lesly-oscuro-tarjeta};
+    --global-footer-bg-color            : #{$lesly-oscuro-fondo};
+    --global-border-color               : #555555;
+    --global-dark-border-color          : #666666;
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #333333;
+    --global-fig-caption-color          : #cccccc;
+    --global-link-color                 : #{$lesly-oscuro-enlace};
+    --global-link-color-hover           : #{mix(#fff, $lesly-oscuro-enlace, 25%)};
+    --global-link-color-visited         : #{$lesly-oscuro-enlace};
+    --global-masthead-link-color        : #{$lesly-oscuro-barra-texto};
+    --global-masthead-link-color-hover  : #{$lesly-oscuro-acento};
+    --global-text-color                 : #{$lesly-oscuro-texto};
+    --global-text-color-light           : #f3f3f3;
+    --global-thead-color                : #3a3a3a;
+
+    --lesly-acento                      : #{$lesly-oscuro-acento};
+    --lesly-barra                       : #{$lesly-oscuro-barra};
+    --lesly-barra-texto                 : #{$lesly-oscuro-barra-texto};
+    --lesly-fondo                       : #{$lesly-oscuro-fondo};
+    --lesly-tarjeta                     : #{$lesly-oscuro-tarjeta};
+}

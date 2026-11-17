@@ -1,0 +1,157 @@
+/* ==========================================================================
+   PERSONALIZACIÓN DEL SITIO DE LESLY
+   --------------------------------------------------------------------------
+   Aquí está el "look" propio del sitio: barra superior negra, fondo gris,
+   bloques blancos y la fuente.
+   - Para cambiar COLORES: edita _sass/theme/_lesly_light.scss
+   - Para cambiar la FUENTE: cambia --lesly-fuente aquí abajo y el enlace de
+     Google Fonts en _includes/head/custom.html
+   ========================================================================== */
+
+:root {
+  --lesly-fuente: "Roboto", -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Fuente ---------- */
+html, body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, button, input,
+.masthead__inner-wrap, .page__title, .archive__item-title, .author__name {
+  font-family: var(--lesly-fuente);
+}
+
+/* ---------- Fondo general ---------- */
+body {
+  background-color: var(--lesly-fondo);
+}
+
+/* ---------- Barra superior (menú) ---------- */
+.masthead {
+  background: var(--lesly-barra);
+
+  &::after {
+    background: var(--lesly-acento);
+  }
+}
+
+.masthead__menu-item,
+.greedy-nav,
+.greedy-nav .visible-links,
+#theme-toggle {
+  background-color: var(--lesly-barra);
+}
+
+.greedy-nav {
+  a,
+  .visible-links a,
+  #theme-toggle button,
+  #theme-toggle i {
+    color: var(--lesly-barra-texto);
+  }
+
+  .visible-links a:hover {
+    color: var(--lesly-acento);
+  }
+
+  .visible-links a::before {
+    background: var(--lesly-acento);
+  }
+
+  .greedy-nav__toggle .navicon,
+  .greedy-nav__toggle .navicon::before,
+  .greedy-nav__toggle .navicon::after {
+    background: var(--lesly-barra-texto);
+  }
+
+  .hidden-links {
+    background: var(--lesly-barra);
+    border-color: var(--lesly-acento);
+
+    a {
+      color: var(--lesly-barra-texto);
+    }
+  }
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: var(--lesly-barra-texto);
+  border-bottom: 3px solid var(--lesly-acento);
+}
+
+/* ---------- Bloques de contenido (tarjetas blancas) ---------- */
+.page,
+.archive {
+  background-color: var(--lesly-tarjeta);
+  border-radius: 6px;
+  padding: 1.5em 2em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.page__title {
+  border-bottom: 2px solid var(--lesly-acento);
+  padding-bottom: 0.3em;
+}
+
+/* Título de secciones dentro de una página (## Título) */
+.page__content h2 {
+  border-bottom: 1px solid var(--lesly-acento);
+}
+
+/* ---------- Botones lavanda (como los del Google Site) ---------- */
+.btn--lesly,
+.btn--lesly:visited {
+  display: inline-block;
+  margin: 0.25em 0.4em 0.25em 0;
+  padding: 0.55em 1.2em;
+  background-color: var(--lesly-acento);
+  color: #ffffff !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  font-weight: 700;
+  border-radius: 4px;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
+
+/* ---------- Pie de página ---------- */
+.page__footer {
+  background-color: var(--lesly-fondo);
+}
+
+/* ---------- Foto dentro de una página ---------- */
+.foto-pagina {
+  display: block;
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 1em 0;
+}
+
+/* ---------- Listas de charlas y cursos ---------- */
+.lista-items {
+  li {
+    margin-bottom: 0.7em;
+    line-height: 1.5;
+  }
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 0.05em 0.5em;
+  margin-right: 0.2em;
+  border-radius: 3px;
+  background-color: var(--lesly-acento);
+  color: #ffffff;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+}
+
+.item-descripcion {
+  font-size: 0.9em;
+  margin-top: 0.2em;
+}
