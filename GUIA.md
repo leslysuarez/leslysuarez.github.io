@@ -336,4 +336,5 @@ Para que GitHub publique el sitio con esta plantilla:
 - El **CV** sigue alojado en Google Drive (ver sección 7 para traerlo al sitio).
 - La foto de la página Overview se copió como `images/lesly-charla.jpg`.
 - Se corrigieron algunas erratas del sitio original: "activel" → "actively", "wored" → "worked", "Organizating"/"Committe" → "Organizing"/"Committee", "Interuniverstaria" → "Interuniversitaria", "Villareal" → "Villarreal", "Barera" → "Barrera", "CO FUNDER" → "Co-founder".
+- **Derechos de autor:** todo el contenido (textos, imágenes, fotos, PDF) es © Lesly Camila Suarez Diaz, con todos los derechos reservados. Así lo dicen el aviso al inicio de `LICENSE`, el `README.md` y el pie de página del sitio. La licencia MIT de `LICENSE` cubre solo el código de la plantilla. Para cambiar el texto del pie de página, edita `_includes/footer.html`.
 - La plantilla original es [Academic Pages](https://github.com/academicpages/academicpages.github.io) (licencia MIT). En `AGENTS.md` hay notas técnicas en inglés de la plantilla.
