@@ -14,4 +14,4 @@ author_profile: true
 
 *Coming soon.*
 
-### Contact me at [lesly.suarez@usach.cl](mailto:lesly.suarez@usach.cl)
+### Contact me at [camilayciencia@gmail.com](mailto:camilayciencia@gmail.com)
