@@ -12,7 +12,8 @@ redirect_from:
 
 I actively participate in and organize academic events promoting mathematics and science outreach in both Peru and Chile.
 
-I am a Master of Science in Mathematics from the University of Santiago de Chile, where I worked under the supervision of Professors [Daniel Barrera](https://sites.google.com/view/danielbarrerasalazar/math) and [Sebastián Herrero](https://sites.google.com/site/sebastianherreromath/home). My academic interests include **Number Theory, Algebra, and Geometry, with a current focus on explicit class field theory and rigid analytic methods.**
+I am a Master of Science in Mathematics from the University of Santiago de Chile, where I worked under the supervision of Professors [Daniel Barrera](https://sites.google.com/view/danielbarrerasalazar/math) and [Sebastián Herrero](https://sites.google.com/site/sebastianherreromath/home). 
+My academic interests include **Number Theory, Algebra, Geometry, with a current focus on explicit class field theory and rigid analytic methods and their intersections with logic and computational complexity.**
 
 I completed my undergraduate studies in mathematics at the National University of Callao, Peru.
 
@@ -24,4 +25,4 @@ I completed my undergraduate studies in mathematics at the National University o
   <a class="btn--lesly" href="{{ '/overview/' | relative_url }}">Overview</a>
 </p>
 
-### Contact me at [lesly.suarez@usach.cl](mailto:lesly.suarez@usach.cl)
+### Contact me at [camilayciencia@gmail.com](mailto:camilayciencia@gmail.com)
