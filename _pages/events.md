@@ -35,4 +35,4 @@ Member of the Organizing Committee ∥ Universidad Nacional del Callao (UNAC) �
 
 Member of the Organizing Committee ∥ 2020.
 
-### Contact me at [lesly.suarez@usach.cl](mailto:lesly.suarez@usach.cl)
+### Contact me at [camilayciencia@gmail.com](mailto:camilayciencia@gmail.com)
